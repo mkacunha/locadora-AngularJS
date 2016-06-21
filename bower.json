@@ -1,0 +1,17 @@
+{
+  "name": "locadoraAngularJS",
+  "homepage": "https://github.com/mkacunha/locadora-AngularJS",
+  "authors": [
+    "mkacunha <mkacunha@gmail.com>"
+  ],
+  "description": "Project AngularJS",
+  "main": "view/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
