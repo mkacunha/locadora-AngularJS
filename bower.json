@@ -5,7 +5,7 @@
     "mkacunha <mkacunha@gmail.com>"
   ],
   "description": "Project AngularJS",
-  "main": "view/index.html",
+  "main": "index.html",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -13,5 +13,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "bootstrap": "^3.3.6",
+    "angular": "1.5.7"
+  }
 }
