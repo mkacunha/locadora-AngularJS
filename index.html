@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="locadora">
 <head>
   <meta charset="UTF-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width">
+
   <title>Locadora de carro</title>
 
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
@@ -13,6 +16,7 @@
   <script src="lib/jquery/dist/jquery.min.js"></script>
   <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="resources/js/index.js"></script>
+  <script src="resources/js/main.js"></script>
 </head>
 <body>
   <div class="row">
@@ -43,10 +47,10 @@
         <!-- Main Menu -->
         <div class="side-menu-container">
           <ul class="nav navbar-nav">
-            <li><a id="btn-cadastro-veiculo" href="ConsultaVeiculo.html"><span class="glyphicon glyphicon-bed"></span> Cadastro de veículo</a></li>
-            <li><a id="btn-cadastro-cliente" href="ConsultaCliente.html"><span class="glyphicon glyphicon-user"></span> Cadastro de cliente</a></li>
-            <li><a id="btn-simular-locacao" href="SimularLocacao.html"><span class="glyphicon glyphicon-retweet"></span> Simular locação</a></li>
-            <li><a id="btn-locacao" href="ConsultaLocacao.html"><span class="glyphicon glyphicon-paste"></span> Locação</a></li>
+            <li><a id="btn-cadastro-veiculo" href="/veiculo"><span class="glyphicon glyphicon-bed"></span> Cadastro de veículo</a></li>
+            <li><a id="btn-cadastro-cliente" href="/cliente"><span class="glyphicon glyphicon-user"></span> Cadastro de cliente</a></li>
+            <li><a id="btn-simular-locacao" href="/locacao/simular"><span class="glyphicon glyphicon-retweet"></span> Simular locação</a></li>
+            <li><a id="btn-locacao" href="/locacao"><span class="glyphicon glyphicon-paste"></span> Locação</a></li>
           </ul>
         </div>
       </nav>
@@ -55,9 +59,8 @@
 
     <div id="load-pagina">
       <div class="container-fluid">
-
         <div class="side-body">
-
+            <ng-view></ng-view>
         </div>
       </div>
 
