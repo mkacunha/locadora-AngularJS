@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="resources/css/index.css">
+  <link rel="stylesheet" href="resources/css/padrao.css">
   <script src="lib/angular/angular.min.js"></script>
   <script src="lib/angular-animate/angular-animate.min.js"></script>
   <script src="lib/angular-route/angular-route.min.js"></script>
@@ -39,7 +40,7 @@
 
             <!-- Brand -->
             <div class="brand-name-wrapper">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="/">
                 Locadora
               </a>
             </div>
@@ -60,14 +61,11 @@
 
     </div>
 
-    <div id="load-pagina">
-      <div class="container-fluid">
-        <div class="side-body">
-            <ng-view></ng-view>
-        </div>
+    <div class="container-fluid">
+      <div class="side-body">
+        <ng-view></ng-view>
       </div>
-
     </div>
 
-</body>
+  </body>
 </html>

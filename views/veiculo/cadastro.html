@@ -1,1 +1,80 @@
-<h1>Cadastro de veículos</h1>
+<div>
+
+  <legend >
+    <div class="titulo-pagina">
+      <span class="aw-titulo-panel"> Cadastro de veículo</span>
+    </div>
+  </legend>
+
+  <div class="panel-body form-horizontal">
+    <div class="form-group">
+      <label for="inid" class="col-sm-2 control-label">Identificação</label>
+      <div class="col-sm-2">
+        <input type="text" class="form-control" id="inid" readonly="readonly"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inmarca" class="col-sm-2 control-label">Marca</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="inmarca" data-label="Marca"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inmodelo" class="col-sm-2 control-label">Modelo</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="inmodelo" data-label="Modelo"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inano" class="col-sm-2 control-label">Ano</label>
+      <div class="col-sm-4">
+        <input type="text" maxlength="4" class="form-control" id="inano" data-label="Ano"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="incor" class="col-sm-2 control-label">Cor</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="incor" data-label="Cor"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inplaca" class="col-sm-2 control-label">Placa</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="inplaca" data-label="Placa"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="invalordiaria" class="col-sm-2 control-label">Valor diária</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="invalordiaria" data-label="Valor diária"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="invalorkm" class="col-sm-2 control-label">Valor por KM</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="invalorkm" data-label="Valor por KM"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inopcionais" class="col-sm-2 control-label">Opcionais</label>
+      <div class="col-sm-8">
+        <textarea id="inopcionais" class="form-control" rows="3"></textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button id="btsalvar" type="submit" class="btn btn-primary">Salvar</button>
+        <button id="btcancelar" type="submit" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>

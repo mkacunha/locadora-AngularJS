@@ -3,8 +3,12 @@ angular.module('locadora', ['ngAnimate', 'ngRoute'])
   $locationProvider.html5Mode(true);
 
   $routeProvider.when('/veiculo', {
-    templateUrl: 'views/veiculo/cadastro.html',
+    templateUrl: 'views/veiculo/consulta.html',
     controller: 'VeiculoController'
+  })
+  .when('/veiculo/novo', {
+    templateUrl: 'views/veiculo/cadastro.html',
+    controller: 'ClienteController'
   })
   .when('/cliente', {
     templateUrl: 'views/cliente/consulta.html',
