@@ -21,47 +21,17 @@
       </thead>
 
       <tbody id="lista-veiculos">
-        <tr>
-          <td class="text-center" id="id" >1</td>
-          <td id="marca">Fiat</td>
-          <td id="modelo">Uno</td>
-          <td id="ano"class="text-left">2015</td>
-          <td id="cor" class="text-left">Amarelo</td>
+        <tr ng-repeat="veiculo in veiculos">
+          <td class="text-center">{{veiculo.id}}</td>
+          <td>{{veiculo.marca}}</td>
+          <td>{{veiculo.modelo}}</td>
+          <td class="text-left">{{veiculo.ano}}</td>
+          <td class="text-left">{{veiculo.cor}}</td>
           <td class="text-center">
-            <a href="*" class="btn btn-link btn-xs" title="Editar" rel="tooltip" data-placement="top">
+            <a href="veiculo/editar/{{veiculo.id}}" class="btn btn-link btn-xs" title="Editar" rel="tooltip" data-placement="top">
               <span class="glyphicon glyphicon-pencil"></span>
             </a>
-            <a class="btn btn-link btn-xs btn-remover">
-              <span class="glyphicon glyphicon-remove"></span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td class="text-center" id="id" >1</td>
-          <td id="marca">Fiat</td>
-          <td id="modelo">Uno</td>
-          <td id="ano"class="text-left">2015</td>
-          <td id="cor" class="text-left">Amarelo</td>
-          <td class="text-center">
-            <a href="*" class="btn btn-link btn-xs" title="Editar" rel="tooltip" data-placement="top">
-              <span class="glyphicon glyphicon-pencil"></span>
-            </a>
-            <a class="btn btn-link btn-xs btn-remover">
-              <span class="glyphicon glyphicon-remove"></span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td class="text-center" id="id" >1</td>
-          <td id="marca">Fiat</td>
-          <td id="modelo">Uno</td>
-          <td id="ano"class="text-left">2015</td>
-          <td id="cor" class="text-left">Amarelo</td>
-          <td class="text-center">
-            <a href="*" class="btn btn-link btn-xs" title="Editar" rel="tooltip" data-placement="top">
-              <span class="glyphicon glyphicon-pencil"></span>
-            </a>
-            <a class="btn btn-link btn-xs btn-remover">
+            <a class="btn btn-link btn-xs" ng-click="remover(veiculo)">
               <span class="glyphicon glyphicon-remove"></span>
             </a>
           </td>

@@ -1,14 +1,19 @@
-angular.module('locadora', ['ngAnimate', 'ngRoute'])
-.config(function($routeProvider, $locationProvider){
+var app = angular.module('locadora', ['ngAnimate', 'ngRoute', 'locadora.services']);
+
+app.config(function($routeProvider, $locationProvider){
   $locationProvider.html5Mode(true);
 
   $routeProvider.when('/veiculo', {
     templateUrl: 'views/veiculo/consulta.html',
-    controller: 'VeiculoController'
+    controller: 'VeiculoConsultaController'
   })
-  .when('/veiculo/novo', {
+  .when('/veiculo/novo/', {
     templateUrl: 'views/veiculo/cadastro.html',
-    controller: 'ClienteController'
+    controller: 'VeiculoCadastroController'
+  })
+  .when('/veiculo/editar/:id', {
+    templateUrl: 'views/veiculo/cadastro.html',
+    controller: 'VeiculoCadastroController'
   })
   .when('/cliente', {
     templateUrl: 'views/cliente/consulta.html',

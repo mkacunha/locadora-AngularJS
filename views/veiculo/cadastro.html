@@ -7,74 +7,76 @@
   </legend>
 
   <div class="panel-body form-horizontal">
-    <div class="form-group">
-      <label for="inid" class="col-sm-2 control-label">Identificação</label>
-      <div class="col-sm-2">
-        <input type="text" class="form-control" id="inid" readonly="readonly"/>
+    <form ng-submit="salvar()">
+      <div class="form-group">
+        <label for="inid" class="col-sm-2 control-label">Identificação</label>
+        <div class="col-sm-2">
+          <input ng-model="veiculo.id" type="text" class="form-control" id="inid" readonly="readonly"/>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for="inmarca" class="col-sm-2 control-label">Marca</label>
-      <div class="col-sm-8">
-        <input type="text" class="form-control" id="inmarca" data-label="Marca"/>
+      <div class="form-group">
+        <label for="inmarca" class="col-sm-2 control-label">Marca</label>
+        <div class="col-sm-8">
+          <input ng-model="veiculo.marca" type="text" class="form-control" id="inmarca" data-label="Marca"/>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for="inmodelo" class="col-sm-2 control-label">Modelo</label>
-      <div class="col-sm-8">
-        <input type="text" class="form-control" id="inmodelo" data-label="Modelo"/>
+      <div class="form-group">
+        <label for="inmodelo" class="col-sm-2 control-label">Modelo</label>
+        <div class="col-sm-8">
+          <input ng-model="veiculo.modelo" type="text" class="form-control" id="inmodelo" data-label="Modelo"/>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for="inano" class="col-sm-2 control-label">Ano</label>
-      <div class="col-sm-4">
-        <input type="text" maxlength="4" class="form-control" id="inano" data-label="Ano"/>
+      <div class="form-group">
+        <label for="inano" class="col-sm-2 control-label">Ano</label>
+        <div class="col-sm-4">
+          <input ng-model="veiculo.ano" type="text" maxlength="4" class="form-control" id="inano" data-label="Ano"/>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for="incor" class="col-sm-2 control-label">Cor</label>
-      <div class="col-sm-4">
-        <input type="text" class="form-control" id="incor" data-label="Cor"/>
+      <div class="form-group">
+        <label for="incor" class="col-sm-2 control-label">Cor</label>
+        <div class="col-sm-4">
+          <input ng-model="veiculo.cor" type="text" class="form-control" id="incor" data-label="Cor"/>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for="inplaca" class="col-sm-2 control-label">Placa</label>
-      <div class="col-sm-4">
-        <input type="text" class="form-control" id="inplaca" data-label="Placa"/>
+      <div class="form-group">
+        <label for="inplaca" class="col-sm-2 control-label">Placa</label>
+        <div class="col-sm-4">
+          <input ng-model="veiculo.placa" type="text" class="form-control" id="inplaca" data-label="Placa"/>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for="invalordiaria" class="col-sm-2 control-label">Valor diária</label>
-      <div class="col-sm-4">
-        <input type="text" class="form-control" id="invalordiaria" data-label="Valor diária"/>
+      <div class="form-group">
+        <label for="invalordiaria" class="col-sm-2 control-label">Valor diária</label>
+        <div class="col-sm-4">
+          <input ng-model="veiculo.valorDiaria" type="text" class="form-control" id="invalordiaria" data-label="Valor diária"/>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for="invalorkm" class="col-sm-2 control-label">Valor por KM</label>
-      <div class="col-sm-4">
-        <input type="text" class="form-control" id="invalorkm" data-label="Valor por KM"/>
+      <div class="form-group">
+        <label for="invalorkm" class="col-sm-2 control-label">Valor por KM</label>
+        <div class="col-sm-4">
+          <input ng-model="veiculo.valorKM" type="text" class="form-control" id="invalorkm" data-label="Valor por KM"/>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for="inopcionais" class="col-sm-2 control-label">Opcionais</label>
-      <div class="col-sm-8">
-        <textarea id="inopcionais" class="form-control" rows="3"></textarea>
+      <div class="form-group">
+        <label for="inopcionais" class="col-sm-2 control-label">Opcionais</label>
+        <div class="col-sm-8">
+          <textarea ng-model="veiculo.opcionais" id="inopcionais" class="form-control" rows="3"></textarea>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button id="btsalvar" type="submit" class="btn btn-primary">Salvar</button>
-        <button id="btcancelar" type="submit" class="btn btn-danger">Cancelar</button>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-primary">Salvar</button>
+          <a href="/veiculo" class="btn btn-danger">Cancelar</a>
+        </div>
       </div>
-    </div>
+    </form>
   </div>
 </div>
