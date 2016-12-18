@@ -14,7 +14,7 @@ app.controller('VeiculoConsultaController', function($scope, veiculoFactory){
       }
     );
   }
-
+  
   buscarTodos = function(){
     veiculoFactory.query(function(veiculos){
       $scope.veiculos = veiculos;

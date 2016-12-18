@@ -1,5 +1,4 @@
 <div>
-
   <legend >
     <div class="titulo-pagina">
       <span class="aw-titulo-panel"> Consulta de veículo</span>
@@ -31,12 +30,16 @@
             <a href="veiculo/editar/{{veiculo.id}}" class="btn btn-link btn-xs" title="Editar" rel="tooltip" data-placement="top">
               <span class="glyphicon glyphicon-pencil"></span>
             </a>
-            <a class="btn btn-link btn-xs" ng-click="remover(veiculo)">
-              <span class="glyphicon glyphicon-remove"></span>
-            </a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+
+            <modal-msg class="btn btn-link btn-xs"
+            title="Atenção..."
+            message="Deseja remover o veículo?"
+            function_ok="remover(veiculo)">
+            <span class="glyphicon glyphicon-remove"></span>
+          </modal-msg>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 </div>

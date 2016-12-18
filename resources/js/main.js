@@ -1,4 +1,10 @@
-var app = angular.module('locadora', ['ngAnimate', 'ngRoute', 'locadora.services']);
+var app = angular.module('locadora', [
+  'ui.bootstrap',
+  'ngAnimate',
+  'ngRoute',
+  'locadora.services',
+  'locadora.diretivas'
+]);
 
 app.config(function($routeProvider, $locationProvider){
   $locationProvider.html5Mode(true);
